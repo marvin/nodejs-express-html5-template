@@ -1,7 +1,7 @@
 module.exports = (app, express) ->
 	app.configure ->
 		app.set "views", "./views"
-		app.register ".coffee", require("coffeekup")
+		app.register ".coffee", require("coffeecup")
 		app.set "view engine", "coffee"
 		app.use express.bodyParser()
 		app.use express.methodOverride()
